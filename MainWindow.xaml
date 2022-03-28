@@ -1,0 +1,27 @@
+﻿<Window x:Class="iamst4rk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iamst4rk"
+        mc:Ignorable="d"
+        MinHeight="200" MinWidth="250" ResizeMode="CanResize" Height="200" Width="250" Title="Окно авторизации" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Vertical">
+                <Image Source="res/logo_vis222.png" Width="100px" Height="50px"></Image>
+                <StackPanel Margin="0 5 0 0" Orientation="Horizontal">
+                    <TextBlock Margin="10 0 0 0" Height="20px" Width="45px" MinHeight="20px" MinWidth="45px">Логин</TextBlock>
+                    <TextBox x:Name="tbLogin" Height="20px" Width="155px" MinHeight="20px" MinWidth="155px">ukirlin@gmail.com</TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                    <TextBlock  Margin="10 0 0 0"  Height="20px" Width="45px">Пароль</TextBlock>
+                    <PasswordBox Height="20px" Width="135px" x:Name="pbPassword"></PasswordBox>
+                    <TextBox x:Name="tbPassword" Height="20px" Width="135px" Visibility="Collapsed"></TextBox>
+                    <Image Source="res/207-2073226_show-icon-png-white-password-view-icon.png" Height="20px" Width="20px" x:Name="eye" MouseLeftButtonDown="eye_MouseLeftButtonDown" MouseLeftButtonUp="eye_MouseLeftButtonUp"></Image>
+                </StackPanel>
+                <Button Margin="0 5 0 0" x:Name="btnLogin" Click="btnLogin_Click" Height="20px" Width="80px">Войти</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
